@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    
+    <header>
+        <a href="/"><img src="/img/airbnb-logo.png" alt="airbnb logo" width="90px" height="90px"></a>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/roomlisting">Room Listing</a></li>
+                <li><a href="/userregistration">User Registration</a></li>
+                <li><a href="/">Login</a></li>
+            </ul>
+        </nav>
+
+        <section class="booking-form">
+
+            <h1>Book homes, hotels, and more on Airbnb</h1>
+        
+            <form method="POST" action="/sendForm">
+                <label>Where</label><br>
+                <input type="text" name="where" placeholder="Anywhere">
+                <br>
+                <label>Check-in</label><br>
+                <input type="text" name="checkIn" placeholder="dd-mm-yyyy">
+                <br>
+                <label>Checkout</label><br>
+                <input type="text" name="checkOut" placeholder="dd-mm-yyyy">
+                <br>
+                <label>Adults</label><br>
+                    <select id = "myList">
+                        <option value = "1">1 adult</option>
+                        <option value = "2">2 adults</option>
+                        <option value = "3">3 adults</option>
+                        <option value = "4">4 adults</option>
+                        <option value = "5">5 adult</option>
+                        <option value = "6">6 adults</option>
+                        <option value = "7">7 adults</option>
+                        <option value = "8">8 adults</option>
+                        <option value = "9">9 adult</option>
+                        <option value = "10">10 adults</option>
+                        <option value = "11">11 adults</option>
+                        <option value = "12">12 adults</option>
+                    </select>
+                <br>
+                <label>Children</label><br>
+                    <select id = "myList">
+                        <option value = "1">0 children</option>
+                        <option value = "2">1 children</option>
+                        <option value = "3">2 children</option>
+                        <option value = "4">3 children</option>
+                        <option value = "5">4 children</option>
+                        <option value = "6">5 children</option>
+                    </select>
+                <br>
+                <br><br>
+                <input class="search-bar" type="Submit" value="Search">
+            </form> 
+        
+    </section><br>
+
+    <div class="promo">
+        <p>Earn up to $987/month hosting your place in Toronto Northwest. &verbar; <a href="#"><strong>Become a Host &gt;</strong></a></p>
+    </div>
+    </header>
+
+    <section class="container" action="/roomlisting">
+        <article class="item">
+            <div class="item-one">
+                <a href="#"><img src="/img/image1.jpg" alt="image 1" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>Cozy self contained cabin</h3>
+                <p>$109CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf;</p>
+
+                 </article>
+        <article class="item">
+            <div class="item-two">
+                <a href="#"><img src="/img/image2.jpg" alt="image 2" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>Super Central Condo, Beside CN Tower</h3>
+                <p>$115CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf; &starf;</p>
+
+                 </article>
+        <article class="item">
+            <div class="item-three">
+                <a href="#"><img src="/img/image3.jpg" alt="image 3" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>PRIVATE: Bath/Garden/View/Parking/Quiet</h3>
+                <p>$185CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf; &starf;</p>
+                 
+                 </article>
+        <article class="item">
+            <div class="item-four">
+                <a href="#"><img src="/img/image4.jpg" alt="image 4" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>Cabin #3 - Alfie the A-Frame</h3>
+                <p>$120CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf; &starf;</p>
+                 
+                 </article>
+        <article class="item">
+            <div class="item-five">
+                <a href="#"><img src="/img/image5.jpg" alt="image 5" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>Luxurious Condo near CN Tower with FREE PARKING</h3>
+                <p>$90CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf;</p>
+                  
+                  </article>
+        <article class="item">
+            <div class="item-six">
+                <a href="#"><img src="/img/image6.jpg" alt="image 6" class="img"></a></div>
+                <h2>CANADA</h2>
+                <h3>Skylit Loft in Old Montreal</h3>
+                <p>$105CAD/Night</p>
+                <p>&starf; &starf; &starf; &starf;</p>
+                
+                 </article>
+    </section><br>
+
+    <section class="registration-form">
+        <h1>Sign-up with <a class="social-link" href="https://www.facebook.com/">Facebook</a> OR <a class="social-link" href="accounts.google.com">Google</a></h1><br><hr>
+        
+            <form method="POST" action="/sendForm1"><br>
+            
+                <input type="text" name="emailAdd" placeholder="Email Address">
+                <br><br>
+                
+                <input type="text" name="firstName" placeholder="First name">
+                <br><br>
+                
+                <input type="text" name="lastName" placeholder="Last name">
+                <br><br>
+
+                <input type="text" name="createPass" placeholder="Create a Password">
+                <br><br>
+                <p class="promo-p">We'll send you marketing promotions, special offers, inspiration, and policy updates via email.</p>
+                <input class="search-bar" type="Submit" value="Sign up">
+            </form> 
+    </section><br>
+
+
+    <section class="main-section">
+            {{{body}}}
+    </section>
+
+    <footer>
+        <div class="row" id="footer">
+			<div class="col-md-1"></div>
+			<div class="col-md-3"><h3>When are you travelling?</h3></div>
+			<div class="col-md-2">
+				<a href="#"><h4>Careers</h4></a>
+				<a href="#"><h4>Become a host</h4></a>
+				<a href="#"><h4>Help</h4></a>
+			</div>
+			<div class="col-md-3">You Can Contact us on<br><br>
+				<a href=""><img src="/img/facebook.png" id="social"></a>
+				<a href=""><img src="/img/Instagram.png" id="social"></a>
+				<a href=""><img src="/img/google-plus.png" id="social"></a>
+			</div><br>
+			<div class="col-md-2" id="copyright">©Savinder@Airbnb All rights reserved</div>
+		</div>
+    </footer>
+
+<script src="/public/js/index.js"></script>
+</body>
+</html>
